@@ -1,5 +1,10 @@
 ### PermissionKit 
-
+ 方便实现 6.0 以上权限授权,
+ * 1. 使用单例模式;申请权限：调用requestPermissionsIfNecessaryForResult
+ * 2. 先要在onRequestPermissionsResult 里面 发下通知notifyPermissionsChange
+ * 3. 需要在Manifest里面先申请权限：包括普通权限和需要申请的特殊权限。
+ * 4. 所有的权限 Manifest.permission.WRITE_EXTERNAL_STORAGE
+ 
 ### Gradle usage
 * 
 * Available from jcenter
