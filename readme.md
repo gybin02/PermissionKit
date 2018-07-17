@@ -28,12 +28,8 @@ PermissionsManager.getInstance().requestPermissionsIfNecessaryForResult(this,
     }
 });
 ```
-### 交流群：ç
- QQ群：547612870 
  
 ### License
-
-Copyright 2017 zhengxiaobin@xiaoyouzi.com; 
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
