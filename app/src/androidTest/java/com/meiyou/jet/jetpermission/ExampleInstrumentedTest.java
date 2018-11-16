@@ -1,4 +1,4 @@
-package com.meiyou.jet.jetpermission;
+package com.jet.jet.jetpermission;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.meiyou.jet.jetpermission", appContext.getPackageName());
+        assertEquals("com.jet.jet.jetpermission", appContext.getPackageName());
     }
 }

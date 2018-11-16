@@ -1,4 +1,4 @@
-package com.meiyou.jet.grant;
+package com.jet.jet.grant;
 
 import android.app.Activity;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package com.meiyou.jet.jetpermission;
+package com.jet.jet.jetpermission;
 
 import org.junit.Test;
 

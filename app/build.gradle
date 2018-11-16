@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.meiyou.jet.jetpermission"
+        applicationId "com.jet.jet.jetpermission"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1

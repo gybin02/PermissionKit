@@ -1,4 +1,4 @@
-package com.meiyou.jet.grant;
+package com.jet.jet.grant;
 
 import org.junit.Test;
 

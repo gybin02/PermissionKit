@@ -1,4 +1,4 @@
-package com.meiyou.jet.jetpermission;
+package com.jet.jet.jetpermission;
 
 import android.Manifest;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.meiyou.jet.grant.PermissionsManager;
-import com.meiyou.jet.grant.PermissionsResultAction;
+import com.jet.jet.grant.PermissionsManager;
+import com.jet.jet.grant.PermissionsResultAction;
 
 
 public class MainActivity extends AppCompatActivity {
