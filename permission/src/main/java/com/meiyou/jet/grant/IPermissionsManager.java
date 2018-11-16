@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
 /**
- * @author zhengxiaobin@xiaoyouzi.com
+ * @author zhengxiaobin
  * @since 17/8/11
  */
 
