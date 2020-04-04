@@ -1,17 +1,31 @@
-### PermissionKit 
- 方便实现 6.0 以上权限授权,
- * 1. 使用单例模式;申请权限：调用requestPermissionsIfNecessaryForResult
- * 2. 先要在onRequestPermissionsResult 里面 发下通知notifyPermissionsChange
- * 3. 需要在Manifest里面先申请权限：包括普通权限和需要申请的特殊权限。
- * 4. 所有的权限 Manifest.permission.WRITE_EXTERNAL_STORAGE
+### PermissionKit  权限申请库
+用来快速方便实现 6.0= 的权限授权,
+
+### 流程
+- 检查是否拥有权限-> 有权限 -> 回调权限申请成功
+- 没有权限是否需要弹窗请求-> 不需要 -> 是否是被设置为永不提醒  
+- 需要弹窗请求，监听是否点击确认-> 未点击 -> 权限申请被拒绝
+- 点击确认主动申请权限，回调结果onRequestPermissionsResult
+- 回调结果判断权限是否申请成功 -> 失败回调|成功回调
  
 ### Gradle usage
 * 
-* Available from jcenter
+* TODO,打包发布
 
 ## How to Use
-
+1. 注册监听
 ```java
+  //在Activity的系统回调里面注册 PermissionsManager
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        PermissionsManager.getInstance().notifyPermissionsChange(permissions, grantResults);
+    }
+```
+
+2. 申请监听
+```java
+//单例实现
 PermissionsManager.getInstance().requestPermissionsIfNecessaryForResult(this,
     new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, new PermissionsResultAction() {
 
